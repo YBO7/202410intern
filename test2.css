@@ -17,12 +17,16 @@ body{
     "g i i j f o o o"
     "m m m m n o o o"
     "m m m m n p q q";
+
+    column-gap: 3px; 
+    row-gap: 3px;
 }
 
 #a{
     grid-area: a;
     background-color: rgba(221, 180, 103, 0.973);
 }
+
 #b{
     grid-area: b;
     background-color: rgb(39, 241, 248);
@@ -87,21 +91,13 @@ body{
     grid-area: q;
     background-color: pink;
 }
+img{
+    width: 100%;
+    height: 100%;
+}
 
-#g { grid-area: g; }
-#h { grid-area: h; }
-#i { grid-area: i; }
-#j { grid-area: j; }
-#k { grid-area: k; }
-#l { grid-area: l; }
-#m { grid-area: m; }
-#n { grid-area: n; }
-#o { grid-area: o; }
-#p { grid-area: p; }
-#q { grid-area: q; }
-
-/* img:hover{ */
-    /* opacity: 0.5; */
-    /* cursor: pointer; */
-    /* transform: scale(1.2); */
-/* } */
+img:hover{
+    opacity: 0.5;
+    cursor: pointer; 
+    transform: scale(1.2); 
+}
