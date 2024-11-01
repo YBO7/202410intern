@@ -1,21 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: grid;
+    grid-template-columns: 11.5% 11.5% 7% 20% 20% 15% 7.5% 7.5%;
+    grid-template-rows: 15% 15% 8% 18% 12.5% 9% 13.5% 9%;
+    grid-template-areas: 
+    "a a b b b c d d" 
+    "a a e e f c d d"
+    "a a e e f c k l"
+    "g h h h f c k l"
+    "g i i j f c k l"
+    "g i i j f o o o"
+    "m m m m n o o o"
+    "m m m m n p q q";
+}
+
 #a{
-    background-color: red;
+    grid-area: a;
+    background-color: rgba(221, 180, 103, 0.973);
 }
 #b{
-    background-color: orange;
+    grid-area: b;
+    background-color: rgb(39, 241, 248);
 }
 #c{
+    grid-area: c;
     background-color: yellow;
 }
 #d{
-    background-color: green;
+    grid-area: d;
+
 }
 #e{
+    grid-area: e;
     background-color: blue;
 }
 #f{
+    grid-area: f;
     background-color: purple;
 }
 #g{
+    grid-area: g;
     background-color: pink;
 }
+#h{
+    grid-area: h;
+    background-color: pink;
+}
+#i{
+    grid-area: i;
+    background-color: pink;
+}
+#j{
+    grid-area: j;
+    background-color: pink;
+}
+#k{
+    grid-area: k;
+    background-color: pink;
+}
+#l{
+    grid-area: l;
+    background-color: pink;
+}
+#m{
+    grid-area: m;
+    background-color: pink;
+}
+#n{
+    grid-area: n;
+    background-color: pink;
+}
+#o{
+    grid-area: o;
+    background-color: pink;
+}
+#p{
+    grid-area: p;
+    background-color: pink;
+}
+#q{
+    grid-area: q;
+    background-color: pink;
+}
+
+#g { grid-area: g; }
+#h { grid-area: h; }
+#i { grid-area: i; }
+#j { grid-area: j; }
+#k { grid-area: k; }
+#l { grid-area: l; }
+#m { grid-area: m; }
+#n { grid-area: n; }
+#o { grid-area: o; }
+#p { grid-area: p; }
+#q { grid-area: q; }
+
+/* img:hover{ */
+    /* opacity: 0.5; */
+    /* cursor: pointer; */
+    /* transform: scale(1.2); */
+/* } */
