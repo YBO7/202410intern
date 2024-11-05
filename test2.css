@@ -17,23 +17,19 @@ body{
     "g i i j f o o o"
     "m m m m n o o o"
     "m m m m n p q q";
-
-    column-gap: 3px; 
-    row-gap: 3px;
+    column-gap: 5px; 
+    row-gap: 5px;
 }
 
 #a{
     grid-area: a;
-    background-color: rgba(221, 180, 103, 0.973);
 }
 
 #b{
     grid-area: b;
-    background-color: rgb(39, 241, 248);
 }
 #c{
     grid-area: c;
-    background-color: yellow;
 }
 #d{
     grid-area: d;
@@ -41,63 +37,55 @@ body{
 }
 #e{
     grid-area: e;
-    background-color: blue;
 }
 #f{
     grid-area: f;
-    background-color: purple;
 }
 #g{
     grid-area: g;
-    background-color: pink;
 }
 #h{
     grid-area: h;
-    background-color: pink;
 }
 #i{
     grid-area: i;
-    background-color: pink;
 }
 #j{
     grid-area: j;
-    background-color: pink;
 }
 #k{
     grid-area: k;
-    background-color: pink;
 }
 #l{
     grid-area: l;
-    background-color: pink;
 }
 #m{
     grid-area: m;
-    background-color: pink;
 }
 #n{
     grid-area: n;
-    background-color: pink;
 }
 #o{
     grid-area: o;
-    background-color: pink;
 }
 #p{
     grid-area: p;
-    background-color: pink;
 }
 #q{
     grid-area: q;
-    background-color: pink;
 }
 img{
     width: 100%;
     height: 100%;
+    opacity: 0.3;
+    border-radius: 10px;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 20px;
 }
 
-img:hover{
-    opacity: 0.5;
-    cursor: pointer; 
-    transform: scale(1.2); 
-}
+/* img:hover{ */
+    /* opacity: 1; */
+    /* cursor: pointer;  */
+    /* rotate: 2deg; */
+    /* transform: scale(1.03);  */
+/* } */
