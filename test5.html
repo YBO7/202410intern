@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coupang!</title>
+    <link rel="stylesheet" href="test5.css">
+</head>
+
+<body>
+    <div id="head">
+        <img src="https://i.namu.wiki/i/6ie-l4oYYPAs43NZ6sfoEonbvROUE4D4BC9tZy2wCWTPe9nbUFtInBCLKssNpBFM1KvLoHUo1mr4PBog2cAo9Q.svg">
+    </div>
+
+    <div id="container">
+        
+        <div id="items">
+            <div id="item1" class="item">
+                <img src="https://cdn.pixabay.com/photo/2019/02/04/06/46/apple-3974057_640.jpg" alt="Item1">
+                <div class="description"> 🍎 사과 / 1,300원</div>
+            </div>
+            <div id="item2" class="item">
+                <img src="https://cdn.pixabay.com/photo/2023/08/11/10/15/watch-8183268_640.jpg" alt="Item2">
+                <div class="description"> ⌚ 손목시계 / 250,000원</div>
+            </div>
+            <div id="item3" class="item">
+                <img src="https://cdn.pixabay.com/photo/2014/08/29/14/53/camera-431119_640.jpg" alt="Item3">
+                <div class="description"> 📷 카메라 / 520,000원</div>
+            </div>
+            <div id="item4" class="item">
+                <img src="https://cdn.pixabay.com/photo/2014/08/26/21/49/jeans-428614_640.jpg" alt="Item4">
+                <div class="description"> 👖 청바지 / 35,000원</div>
+            </div>
+        </div>
+
+        
+        <div id="cart">
+            <h3>[CART]</h3>
+            <div id="cartItems"></div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart(itemId, itemImgSrc) {
+            const cartItems = document.getElementById("cartItems");
+            let cartItem = document.querySelector(`#cartItems div[data-id="${itemId}"]`);
+
+            // 장바구니에 이미 있는 아이템이면 수량 증가
+            if (cartItem) {
+                let quantity = cartItem.querySelector(".quantity");
+                quantity.innerText = parseInt(quantity.innerText) + 1;
+            } else {
+                // 새로운 아이템 추가
+                cartItem = document.createElement("div");
+                cartItem.setAttribute("data-id", itemId);
+                cartItem.innerHTML = `<img src="${itemImgSrc}" alt="${itemId}">
+                                      <span class="quantity">1</span>`;
+                cartItems.appendChild(cartItem);
+
+                // 장바구니 아이템 클릭 시 수량 감소
+                cartItem.addEventListener("click", () => removeFromCart(cartItem));
+            }
+        }
+
+        function removeFromCart(cartItem) {
+            let quantity = cartItem.querySelector(".quantity");
+            if (parseInt(quantity.innerText) > 1) {
+                quantity.innerText = parseInt(quantity.innerText) - 1;
+            } else {
+                cartItem.remove();
+            }
+        }
+
+        document.querySelectorAll(".item").forEach((item, index) => {
+            item.addEventListener("click", () => {
+                const itemId = `item${index + 1}`;
+                const itemImgSrc = item.querySelector("img").src;
+                addToCart(itemId, itemImgSrc);
+            });
+        });
+    </script>
+</body>
+</html>
