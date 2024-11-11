@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>--</title> 
+</head>
+
+<script>
+    function aaa(msg){
+        // console.log(msg);
+        // console.log(document.getElementById("origin_msg").innerText);
+        document.getElementById("origin_msg").innerText = msg
+    }
+    function colorBox(color) {
+        document.getElementById("origin_msg").style.color = color;
+    }
+</script>
+
+<body>
+    <div id="origin_msg" style="color: black"> test </div>
+    <input onclick="aaa('!'); colorBox(color='blue')" type="button" value="Click" >
+    <input onclick="aaa('?'); colorBox(color='red')" type="button" value="Click" >
+</body>
+</html>
