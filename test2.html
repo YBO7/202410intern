@@ -2,66 +2,56 @@
     <head>
         <title>Test2</title>
         <link rel="stylesheet" href="test2.css"> 
-        <style>
-            img {
-                opacity: 0.3;
-                transition: transform 0.3s, opacity 0.3s;
-            }
-        </style>
-        <script src="test2.js" defer></script>
+        <!-- <script src="test2.js" defer></script> -->
     </head>
 
-    <body>
-        <div id="a">
-            <div id="a"><img src="https://picsum.photos/id/1/200/200" alt="Image a" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div>
-        </div>
-        <div id="b">
-            <div id="b"><img src="https://picsum.photos/id/23/200/200" alt="Image b" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="c">
-            <div id="c"><img src="https://picsum.photos/id/38/200/200" alt="Image c" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="d">
-            <div id="d"><img src="https://picsum.photos/id/49/200/200" alt="Image d" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="e">
-            <div id="e"><img src="https://picsum.photos/id/52/200/200" alt="Image e" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="f">
-            <div id="f"><img src="https://picsum.photos/id/64/200/200" alt="Image f" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="g">
-            <div id="g"><img src="https://picsum.photos/id/18/200/200" alt="Image g" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="h">
-            <div id="h"><img src="https://picsum.photos/id/26/200/200" alt="Image h" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="i">
-            <div id="i"><img src="https://picsum.photos/id/170/200/200" alt="Image i" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="j">
-            <div id="j"><img src="https://picsum.photos/id/71/200/200" alt="Image j" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="k">
-            <div id="k"><img src="https://picsum.photos/id/178/200/200" alt="Image k" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="l">
-            <div id="l"><img src="https://picsum.photos/id/21/200/200" alt="Image l" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="m">
-            <div id="m"><img src="https://picsum.photos/id/61/200/200" alt="Image m" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="n">
-            <div id="n"><img src="https://picsum.photos/id/147/200/200" alt="Image n" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="o">
-            <div id="o"><img src="https://picsum.photos/id/71/200/200" alt="Image o" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="p">
-            <div id="p"><img src="https://picsum.photos/id/45/200/200" alt="Image p" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
-        </div>
-        <div id="q">
-            <div id="q"><img src="https://picsum.photos/id/38/200/200" alt="Image q" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)"></div></div>
+    <script>
+        function handleOnLoad() {
+            const wrapper = document.querySelectorAll("#wrapper div")
+            for (let index = 0; index < wrapper.length; indexb++) {
+                const element = wrapper[index];
+                const ddd = document.getElementById(element.id);
+                ddd.style.opacity = 0.2;
+                ddd.addEventListener("mouseover", (event) => 
+                    handleMouseOver(event.target.id)
+                );
+                
+                ddd.addEventListener("mouseout", (event) =>
+                    handleMouseOut(event.target.id)
+                );
+            }
+        }
+
+        function handleMouseOver(id) {
+            const d = document.getElementById(id);
+            d.style.opacity = 1;
+        }
+
+        function handleMouseOut(id) {
+            const d = document.getElementById(id);
+            d.style.opacity = 0.2;
+        }
+    </script>
+
+    <body onload ="handleOnLoad();">
+        <div id="wrapper">
+            <div id="a"><img src="https://picsum.photos/id/1/200/200"></div>
+            <div id="b"><img src="https://picsum.photos/id/23/200/200"></div>
+            <div id="c"><img src="https://picsum.photos/id/38/200/200"></div>
+            <div id="d"><img src="https://picsum.photos/id/49/200/200"></div>
+            <div id="e"><img src="https://picsum.photos/id/52/200/200"></div>
+            <div id="f"><img src="https://picsum.photos/id/64/200/200"></div>
+            <div id="g"><img src="https://picsum.photos/id/18/200/200"></div>
+            <div id="h"><img src="https://picsum.photos/id/26/200/200"></div>
+            <div id="i"><img src="https://picsum.photos/id/170/200/200"></div>
+            <div id="j"><img src="https://picsum.photos/id/71/200/200"></div>
+            <div id="k"><img src="https://picsum.photos/id/178/200/200"></div>
+            <div id="l"><img src="https://picsum.photos/id/21/200/200"></div>
+            <div id="m"><img src="https://picsum.photos/id/61/200/200"></div>
+            <div id="n"><img src="https://picsum.photos/id/147/200/200"></div>
+            <div id="o"><img src="https://picsum.photos/id/71/200/200"></div>
+            <div id="p"><img src="https://picsum.photos/id/45/200/200"></div>
+            <div id="q"><img src="https://picsum.photos/id/38/200/200"></div>
         </div>
     </body>
 </html>

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="test4.css">
+    </head>
+
+    <script>
+        function handleaddbox() {
+            // 색 array
+            const colors = ["pink","green","brown"]
+            const randomColor = Math.floor(Math.random() * colors.length);
+
+            const box = document.createElement("div");
+            box.style.width = '100px';
+            box.style.height = '100px';
+            box.style.borderRadius = '50%';
+            box.style.backgroundColor= colors[randomColor];
+            box.style.cursor="pointer";
+    
+
+            // 눌렀을 때 이벤트 추가 
+            box.addEventListener('click', () => box.remove());
+
+            box.addEventListener('mouseover', () => {
+                box.style.transform = "scale(1.03)";
+                box.style.opacity = 0.3;
+            });
+
+            box.addEventListener('mouseout', () => {
+                box.style.transform = "scale(1)";
+                box.style.opacity = 1;
+            });
+
+            const wrapper = document.getElementById("box_wrapper");
+            wrapper.appendChild(box);
+        }
+    </script>
+    <body>
+        <div id="wrapper">
+            <button onclick="handleaddbox()">Click!</button>
+            <div id="box_wrapper">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>  
+    </body>
+</html>
