@@ -24,172 +24,134 @@
 
     <main id="main-content">
         <section id="category1" class="product-list">
-            <div class="product">
+            <div class="product" onclick="openModal(['/imgs/me8.jpg.jpg', '/imgs/me16.jpg.jpg', '/imgs/me17.jpg.jpg'])">
                 <img src="/imgs/me8.jpg.jpg" alt="item 1">
                 <h2>암막커튼</h2>
                 <div>체크 기모 바람막이</div>
                 <p>₩100,000</p>
             </div>
-            <div class="product">
+            
+            <div class="product" onclick="openModal(['/imgs/me4.jpg.jpg', '/imgs/me6.jpg.jpg', '/imgs/me9.jpg.jpg'])">
                 <img src="/imgs/me4.jpg.jpg" alt="item 2">
                 <h2>쉬폰커튼</h2>
-                <div>비침없는 밀크쉬폰 </div>
+                <div>비침없는 밀크쉬폰</div>
                 <p>₩100,000</p>
             </div>
-            <div class="product">
-                <img src="/imgs/me7.jpg.jpg" alt="item 1">
+            <div class="product" onclick="openModal(['/imgs/me7.jpg.jpg', '/imgs/me1.jpg.jpg', '/imgs/me3.jpg.jpg'])">
+                <img src="/imgs/me7.jpg.jpg" alt="item 3">
                 <h2>암막커튼</h2>
                 <div>소프트 린넨스타일</div>
                 <p>₩100,000</p>
             </div>
-            <div class="product">
-                <img src="/imgs/me6.jpg.jpg" alt="item 2">
-                <h2>쉬폰커튼</h2>
-                <div>색상: 블랙, 화이트, 그레이, 베이지</div>
-                <p>₩100,000</p>
-            </div>
-            <div class="product">
-                <img src="/imgs/me2.jpg.jpg" alt="item 1">
-                <h2>암막커튼</h2>
-                <div>향균 암막커튼</div>
-                <p>₩100,000</p>
-            </div>
+            <!-- 추가 제품들도 동일하게 설정 가능 -->
         </section>
         
+        <!-- 다른 카테고리 제품들 -->
         <section id="category2" class="product-list" style="display: none;">
-            <div class="product">
-                <img src="/imgs/me3.jpg.jpg" alt="item 1">
+            <div class="product" onclick="openModal(['/imgs/me3.jpg.jpg', '/imgs/me5.jpg.jpg', '/imgs/me8.jpg.jpg'])">
+                <img src="/imgs/me20.jpg.jpg" alt="item 6">
                 <h2>콤비블라인드</h2>
-                <div>여기에는</div>
+                <div>설명란</div>
                 <p>₩200,000</p>
             </div>
-            <div class="product">
-                <img src="/imgs/me9.jpg.jpg" alt="item 2">
-                <h2>암막블라인드</h2>
-                <div>멋있는 블라인드 설명을</div>
-                <p>₩200,000</p>
-            </div>
-            <div class="product">
-                <img src="/imgs/me8.jpg.jpg" alt="item 1">
+            <div class="product" onclick="openModal(['/imgs/me13.jpg.jpg', '/imgs/me15.jpg.jpg', '/imgs/me18.jpg.jpg'])">
+                <img src="/imgs/me10.jpg.jpg" alt="item 6">
                 <h2>콤비블라인드</h2>
-                <div>기똥차게</div>
+                <div>설명란</div>
                 <p>₩200,000</p>
             </div>
-            <div class="product">
-                <img src="/imgs/me4.jpg.jpg" alt="item 2">
-                <h2>암막블라인드</h2>
-                <div>알려주면</div>
-                <p>₩200,000</p>
-            </div>
-            <div class="product">
-                <img src="/imgs/me7.jpg.jpg" alt="item 1">
+            <div class="product" onclick="openModal(['/imgs/me7.jpg.jpg', '/imgs/me9.jpg.jpg', '/imgs/me10.jpg.jpg'])">
+                <img src="/imgs/me3.jpg.jpg" alt="item 6">
                 <h2>콤비블라인드</h2>
-                <div>내가 써줄게</div>
+                <div>설명란</div>
                 <p>₩200,000</p>
             </div>
+            <!-- 다른 제품들 추가 가능 -->
         </section>
 
         <section id="category3" class="product-list" style="display: none;">
-            <div class="product">
-                <img src="/imgs/me1.jpg.jpg" alt="item 1">
+            <div class="product" onclick="openModal(['/imgs/me1.jpg.jpg', '/imgs/me5.jpg.jpg', '/imgs/me8.jpg.jpg'])">
+                <img src="/imgs/me3.jpg.jpg" alt="item 11">
                 <h2>ㅇㅇ우드</h2>
-                <div>여기에는</div>
+                <div>설명란</div>
                 <p>₩300,000</p>
             </div>
-            <div class="product">
-                <img src="/imgs/me5.jpg.jpg" alt="item 2">
-                <h2>ㅁㅁ우드</h2>
-                <div>멋있는 우드 설명을</div>
-                <p>₩300,000</p>
-            </div>
-            <div class="product">
-                <img src="/imgs/me7.jpg.jpg" alt="item 1">
+            <div class="product" onclick="openModal(['/imgs/me11.jpg.jpg', '/imgs/me9.jpg.jpg', '/imgs/me7.jpg.jpg'])">
+                <img src="/imgs/me9.jpg.jpg" alt="item 11">
                 <h2>ㅇㅇ우드</h2>
-                <div>기똥차게</div>
+                <div>설명란</div>
                 <p>₩300,000</p>
             </div>
-            <div class="product">
-                <img src="/imgs/me6.jpg.jpg" alt="item 2">
-                <h2>ㅁㅁ우드</h2>
-                <div>알려주면</div>
-                <p>₩300,000</p>
-            </div>
-            <div class="product">
-                <img src="/imgs/me3.jpg.jpg" alt="item 2">
+            <div class="product" onclick="openModal(['/imgs/me21.jpg.jpg', '/imgs/me25.jpg.jpg', '/imgs/me17.jpg.jpg'])">
+                <img src="/imgs/me16.jpg.jpg" alt="item 11">
                 <h2>ㅇㅇ우드</h2>
-                <div>내가 써줄게</div>
+                <div>설명란</div>
                 <p>₩300,000</p>
             </div>
+            <!-- 다른 제품들 추가 가능 -->
         </section>
-        
+
         <section id="category4" class="product-list" style="display: none;">
-            <div class="product">
-                <img src="/imgs/me1.jpg.jpg" alt="item 1">
+            <div class="product" onclick="openModal(['/imgs/me1.jpg.jpg', '/imgs/me4.jpg.jpg', '/imgs/me2.jpg.jpg'])">
+                <img src="/imgs/me7.jpg.jpg" alt="item 16">
                 <h2>ㅇㅇ쉐이드</h2>
-                <div>여기에는</div>
+                <div>설명란</div>
                 <p>₩400,000</p>
             </div>
-            <div class="product">
-                <img src="/imgs/me4.jpg.jpg" alt="item 2">
+            <div class="product" onclick="openModal(['/imgs/me11.jpg.jpg', '/imgs/me14.jpg.jpg', '/imgs/me10.jpg.jpg'])">
+                <img src="/imgs/me15.jpg.jpg" alt="item 16">
                 <h2>ㅇㅇ쉐이드</h2>
-                <div>멋있는 쉐이드 설명을</div>
+                <div>설명란</div>
                 <p>₩400,000</p>
             </div>
-            <div class="product">
-                <img src="/imgs/me2.jpg.jpg" alt="item 2">
+            <div class="product" onclick="openModal(['/imgs/me21.jpg.jpg', '/imgs/me24.jpg.jpg', '/imgs/me23.jpg.jpg'])">
+                <img src="/imgs/me3.jpg.jpg" alt="item 16">
                 <h2>ㅇㅇ쉐이드</h2>
-                <div>기똥차게</div>
+                <div>설명란</div>
                 <p>₩400,000</p>
             </div>
-            <div class="product">
-                <img src="/imgs/me9.jpg.jpg" alt="item 2">
-                <h2>ㅇㅇ쉐이드</h2>
-                <div>알려주면</div>
-                <p>₩400,000</p>
-            </div>
-            <div class="product">
-                <img src="/imgs/me5.jpg.jpg" alt="item 2">
-                <h2>ㅇㅇ쉐이드</h2>
-                <div>내가 써줄게</div>
-                <p>₩400,000</p>
-            </div>
+            <!-- 다른 제품들 추가 가능 -->
         </section>
 
         <section id="category5" class="product-list" style="display: none;">
-            <div class="product">
-                <img src="/imgs/me1.jpg.jpg" alt="item 1">
+            <div class="product" onclick="openModal(['/imgs/me19.jpg.jpg', '/imgs/me17.jpg.jpg', '/imgs/me14.jpg.jpg'])">
+                <img src="/imgs/me11.jpg.jpg" alt="item 21">
                 <h2>허니콤</h2>
-                <div>여기에는</div>
+                <div>설명란</div>
                 <p>₩500,000</p>
             </div>
-            <div class="product">
-                <img src="/imgs/me8.jpg.jpg" alt="item 2">
-                <h2>암막허니콤</h2>
-                <div>멋있는 우드 설명을</div>
+            <div class="product" onclick="openModal(['/imgs/me2.jpg.jpg', '/imgs/me3.jpg.jpg', '/imgs/me14.jpg.jpg'])">
+                <img src="/imgs/me12.jpg.jpg" alt="item 21">
+                <h2>허니콤</h2>
+                <div>설명란</div>
                 <p>₩500,000</p>
             </div>
-            <div class="product">
-                <img src="/imgs/me5.jpg.jpg" alt="item 2">
-                <h2>암막허니콤</h2>
-                <div>기똥차게</div>
+            <div class="product" onclick="openModal(['/imgs/me4.jpg.jpg', '/imgs/me18.jpg.jpg', '/imgs/me6.jpg.jpg'])">
+                <img src="/imgs/me21.jpg.jpg" alt="item 21">
+                <h2>허니콤</h2>
+                <div>설명란</div>
                 <p>₩500,000</p>
             </div>
-            <div class="product">
-                <img src="/imgs/me1.jpg.jpg" alt="item 2">
-                <h2>암막허니콤</h2>
-                <div>알려주면</div>
-                <p>₩500,000</p>
-            </div>
-            <div class="product">
-                <img src="/imgs/me9.jpg.jpg" alt="item 2">
-                <h2>암막허니콤</h2>
-                <div>내가 써줄게</div>
-                <p>₩500,000</p>
-            </div>
+            <!-- 다른 제품들 추가 가능 -->
         </section>
     
     </main>
-   
+
+    <div id="image-modal" class="modal" style="display: none;">
+        <button id="back-button" onclick="closeModal()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="slider">
+            <div class="slide-container">
+                <!-- 이미지 슬라이드가 여기 추가됩니다 -->
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 커튼이야기 (해와달). All rights reserved.</p>
     </footer>
