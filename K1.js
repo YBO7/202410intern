@@ -69,12 +69,12 @@ function changeSlide(step) {
     updateSlide();
 }
 
-// 슬라이드 업데이트 함수
+// 슬라이드 업데이트 함수 (수정 필요)
 function updateSlide() {
     const totalSlides = slideContainer.children.length;
     if (currentSlideIndex < 0) currentSlideIndex = totalSlides - 1;
     if (currentSlideIndex >= totalSlides) currentSlideIndex = 0;
-    slideContainer.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+    slideContainer.style.transform = `translateX(-${currentSlideIndex * 87}%)`;
 }
 
 // 각 제품의 이미지 클릭 시 모달 열기
